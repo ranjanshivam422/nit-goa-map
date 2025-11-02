@@ -272,36 +272,62 @@ const NITGoaCampusMap = () => {
 useEffect(() => {
   if (!map || !window.google || activeTab !== 'map') return;
 
-  // Clear previous markers
-  markersRef.current.forEach(marker => marker.setMap(null));
-  markersRef.current = [];
+  const existingMarkers = markersRef.current;
 
-  // Create new markers
+  // Create a map (object) of existing markers by lat,lng
+  const markerMap = new Map(
+    existingMarkers.map(marker => {
+      const pos = marker.getPosition();
+      return [`${pos.lat()},${pos.lng()}`, marker];
+    })
+  );
+
+  // Prepare updated marker list
+  const updatedMarkers = [];
+
   filteredLocations.forEach(location => {
-    const marker = new window.google.maps.Marker({
-      position: { lat: location.lat, lng: location.lng },
-      map,
-      title: location.name,
-      icon: {
-        path: window.google.maps.SymbolPath.CIRCLE,
-        scale: 12,
-        fillColor: getCategoryColor(location.category),
-        fillOpacity: 0.9,
-        strokeColor: '#ffffff',
-        strokeWeight: 3
-      },
-      animation: window.google.maps.Animation.DROP,
-      optimized: true
-    });
+    const key = `${location.lat},${location.lng}`;
 
-    marker.addListener('click', () => {
-      setSelectedLocation(location);
-      setDetailPanelHeight(2);
-      map.panTo({ lat: location.lat, lng: location.lng });
-    });
+    let marker = markerMap.get(key);
+    if (!marker) {
+      // Only animate new markers
+      marker = new window.google.maps.Marker({
+        position: { lat: location.lat, lng: location.lng },
+        map,
+        title: location.name,
+        icon: {
+          path: window.google.maps.SymbolPath.CIRCLE,
+          scale: 12,
+          fillColor: getCategoryColor(location.category),
+          fillOpacity: 0.9,
+          strokeColor: '#ffffff',
+          strokeWeight: 3,
+        },
+        animation: window.google.maps.Animation.DROP,
+        optimized: true,
+      });
 
-    markersRef.current.push(marker);
+      marker.addListener("click", () => {
+        setSelectedLocation(location);
+        setDetailPanelHeight(2);
+        map.panTo({ lat: location.lat, lng: location.lng });
+      });
+    }
+
+    updatedMarkers.push(marker);
   });
+
+  // Remove markers that are no longer needed
+  existingMarkers.forEach(marker => {
+    const pos = marker.getPosition();
+    const key = `${pos.lat()},${pos.lng()}`;
+    if (!filteredLocations.some(loc => `${loc.lat},${loc.lng}` === key)) {
+      marker.setMap(null);
+    }
+  });
+
+  // Save updated markers
+  markersRef.current = updatedMarkers;
 }, [map, filteredLocations, activeTab]);
 
   // Track user location

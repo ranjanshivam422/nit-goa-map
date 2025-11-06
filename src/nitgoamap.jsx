@@ -60,16 +60,77 @@ const NITGoaCampusMap = () => {
       image: "photos/Girls_hostel.jpeg"
     },
     {
+      id: 4,
+      name: "1 block",
+      category: "Department",
+      icon: "🏠",
+      lat:15.169746,
+      lng: 74.012963,
+      description: "Accommodation facility for female students with secure access",
+      timings: "24/7",
+      contact: "+91-832-2404230",
+      image: "photos/WhatsApp Image 2025-11-04 at 2.08.10 PM.jpeg"
+    },
+    {
+      id: 4,
+      name: "2 block",
+      category: "Department",
+      icon: "🏠",
+      lat:15.169797,
+      lng: 74.013555,
+      description: "Accommodation facility for female students with secure access",
+      timings: "24/7",
+      contact: "+91-832-2404230",
+      image: "photos/WhatsApp Image 2025-11-04 at 2.08.09 PM.jpeg"
+    },
+    {
+      id: 4,
+      name: "3 block",
+      category: "Department",
+      icon: "🏠",
+      lat:15.169768,
+      lng:74.014136,
+      description: "Accommodation facility for female students with secure access",
+      timings: "24/7",
+      contact: "+91-832-2404230",
+      image: "photos/WhatsApp Image 2025-11-04 at 2.08.08 PM (1).jpeg"
+    },
+    {
+      id: 4,
+      name: "Admin block",
+      category: "Department",
+      icon: "🏠",
+      lat:15.1681993,
+      lng:74.0119999,
+      description: "Accommodation facility for female students with secure access",
+      timings: "24/7",
+      contact: "+91-832-2404230",
+      image: "photos/admin_block.jpeg"
+    },
+    {
+      id: 4,
+      name: "Nescafe",
+      category: "Department",
+      icon: "🏠",
+      lat:15.170309,
+      lng:74.013932,
+      description: "Accommodation facility for female students with secure access",
+      timings: "24/7",
+      contact: "+91-832-2404230",
+      image: "photos/Nescafe.jpeg"
+    },
+     
+    {
       id: 5,
       name: "ECE Department",
-      category: "sports",
+      category: "Department",
       icon: "⚽",
       lat: 15.168767,
       lng: 74.012959,
       description: "Multi-sport facility with indoor and outdoor courts, gymnasium",
       timings: "6:00 AM - 10:00 PM",
       contact: "+91-832-2404240",
-      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop"
+      image: "photos/ece_department_block.jpeg"
     },
     {
       id: 6,
@@ -100,8 +161,8 @@ const NITGoaCampusMap = () => {
       name: "CSE Department",
       category: "academic",
       icon: "💻",
-      lat: 15.168820,
-      lng: 15.168820,
+      lat: 15.168767,
+      lng:74.013543,
       description: "Computing labs with high-speed internet and latest hardware",
       timings: "8:00 AM - 10:00 PM",
       contact: "+91-832-2404270",

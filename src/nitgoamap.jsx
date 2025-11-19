@@ -13,7 +13,7 @@ const NITGoaCampusMap = () => {
   const [locations, setLocations] = useState([
     {
       id: 1,
-      name: "Main Academic Block",
+      name: "Gyan Mandir",
       category: "academic",
       icon: "🏛️",
       lat: 15.169194,
@@ -25,13 +25,13 @@ const NITGoaCampusMap = () => {
     },
     {
       id: 1,
-      name: "Hall",
+      name: "mandavi seminar Hall",
       category: "academic",
       icon: "🏛️",
       lat: 15.168922,
       lng:74.011754,
-      description: "Primary academic building housing major departments including CSE, ECE, and Mechanical Engineering",
-      timings: "8:00 AM - 8:00 PM",
+      description: "aditorium,Primary academic building housing major departments including CSE, ECE, and Mechanical Engineering",
+      timings: "9:00 AM - 11:00 PM",
       contact: "+91-832-2404200",
       image: "photos/auditorium.jpeg"
     },
@@ -61,7 +61,7 @@ const NITGoaCampusMap = () => {
     },
     {
       id: 3,
-      name: "Boys Hostel 1",
+      name: "Boys Hostel ",
       category: "hostel",
       icon: "🏠",
       lat: 15.171164,
@@ -85,36 +85,36 @@ const NITGoaCampusMap = () => {
     },
     {
       id: 4,
-      name: "1 block",
-      category: "Department",
+      name: "Abdul Kalam Block",
+      category: "Deparment",
       icon: "🏠",
       lat:15.169746,
       lng: 74.012963,
-      description: "Accommodation facility for female students with secure access",
+      description: "Department of EEE Block. eee labs,faculty offices will be operated",
       timings: "24/7",
       contact: "+91-832-2404230",
       image: "photos/WhatsApp Image 2025-11-04 at 2.08.10 PM.jpeg"
     },
     {
       id: 4,
-      name: "2 block",
+      name: "c v raman complex",
       category: "Department",
       icon: "🏠",
       lat:15.169797,
       lng: 74.013555,
-      description: "Accommodation facility for female students with secure access",
+      description: "Department of Applied science and Humanities and social sciences",
       timings: "24/7",
       contact: "+91-832-2404230",
       image: "photos/WhatsApp Image 2025-11-04 at 2.08.09 PM.jpeg"
     },
     {
       id: 4,
-      name: "3 block",
+      name: "visvesvaraya complex",
       category: "Department",
       icon: "🏠",
       lat:15.169768,
       lng:74.014136,
-      description: "Accommodation facility for female students with secure access",
+      description: "department of mechanical engineering and civil engineering block. opertes mec and civils departments labs,faculty offices",
       timings: "24/7",
       contact: "+91-832-2404230",
       image: "photos/WhatsApp Image 2025-11-04 at 2.08.08 PM (1).jpeg"
@@ -126,7 +126,7 @@ const NITGoaCampusMap = () => {
       icon: "🏠",
       lat:15.1681993,
       lng:74.0119999,
-      description: "Accommodation facility for female students with secure access",
+      description: "coordinates institute activities and houses administrative offices",
       timings: "24/7",
       contact: "+91-832-2404230",
       image: "photos/admin_block.jpeg"
@@ -134,11 +134,11 @@ const NITGoaCampusMap = () => {
     {
       id: 4,
       name: "Nescafe",
-      category: "Department",
-      icon: "🏠",
+      category: "facility",
+      icon: "☕",
       lat:15.170309,
       lng:74.013932,
-      description: "Accommodation facility for female students with secure access",
+      description: "providing a casual environment for students and staff to enjoy beverages and light snacks",
       timings: "24/7",
       contact: "+91-832-2404230",
       image: "photos/Nescafe.jpeg"
@@ -146,12 +146,12 @@ const NITGoaCampusMap = () => {
      
     {
       id: 5,
-      name: "ECE Department",
+      name: "sarabhai complex",
       category: "Department",
-      icon: "⚽",
+      icon: "🏠",
       lat: 15.168767,
       lng: 74.012959,
-      description: "Multi-sport facility with indoor and outdoor courts, gymnasium",
+      description: "Department of Electronics and Communication Engineering. labs,faculty offices will be operated for ece department",
       timings: "6:00 AM - 10:00 PM",
       contact: "+91-832-2404240",
       image: "photos/ece_department_block.jpeg"
@@ -161,12 +161,12 @@ const NITGoaCampusMap = () => {
       name: "Cafeteria",
       category: "facility",
       icon: "🍽️",
-      lat: 15.170013,
+      lat: 15.17001, 
       lng: 74.013312,
       description: "Main dining facility serving variety of cuisines and snacks",
       timings: "7:00 AM - 11:00 PM",
       contact: "+91-832-2404250",
-      image: "photos/WhatsApp Image 2025-11-06 at 11.21.09 PM.jpeg"
+      image: "photos/canteen.jpeg"
     },
     {
       id: 7,
@@ -182,12 +182,12 @@ const NITGoaCampusMap = () => {
     },
     {
       id: 8,
-      name: "CSE Department",
-      category: "academic",
+      name: "Ramanujan complex",
+      category: "Department ",
       icon: "💻",
       lat: 15.168767,
       lng:74.013543,
-      description: "Computing labs with high-speed internet and latest hardware",
+      description: "Department of Computer Science and Engineering Block. Computing labs with high-speed internet and latest hardware",
       timings: "8:00 AM - 10:00 PM",
       contact: "+91-832-2404270",
       image: "photos/cse_department_block.jpeg"
@@ -196,15 +196,62 @@ const NITGoaCampusMap = () => {
       id: 9,
       name: "Sport Ground",
       category: "academic",
-      icon: "💻",
+      icon: "🏏🥅🏐",
       lat: 15.171153,
       lng: 74.014353,
-      description: "Computing labs with high-speed internet and latest hardware",
+      description: "Facilities for cricket, football, volleyball, and other sports activities",
       timings: "8:00 AM - 10:00 PM",
       contact: "+91-832-2404270",
       image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop"
+    },
+    {
+      id: 10,
+      name: "G D Naidu workshop",
+      category: "workspace",
+      icon: "🏭",
+      lat: 15.169992919894648, 
+      lng: 74.01296780699751,
+      description: "Engineering workshop with machinery and labs for practical training",
+      timings: "8:00 AM - 6:00 PM",
+      contact: "+91-832-2404280",
+      image: "photos/Whatsapp Image 2025-11-04 at 2.08.09 PM(2).jpeg"
+    },
+    {
+      id: 11,
+      name: "SS BHATNAGA ENGINEERING Workshop",
+      category: "workspace",
+      icon: "🏗️",
+      lat: 15.17001993141709, 
+      lng: 74.0139361463866,
+      description: "Workshop for Civil Engineering students with labs, construction tools, and project work areas.",
+      timings: "8:00 AM - 6:00 PM",
+      contact: "+91-832-2404330",
+      image: "photos/WhatsApp Image 2025-11-04 at 2.08.08 PM.jpeg"
+    },
+    {
+       id: 12,
+       name: "Parking Area",
+       category: "parking",
+       icon: "🅿️",
+       lat: 15.167679109120652, 
+       lng: 74.01061175926222,
+       description: "Designated parking space for students and staff vehicles",
+       timings: "24/7",
+       contact: "+91-832-2404290",
+        image: "photos/parking.jpeg"
+    },
+    {
+       id: 13,
+       name: "Parking Area 2",
+       category: "parking",
+       icon: "🅿️",
+       lat: 15.16827, 
+       lng: 74.01078,
+       description: "Designated parking space for students and staff vehicles",
+       timings: "24/7",
+       contact: "+91-832-2404290",
+        image: "photos/parking.jpeg"
     }
-
   ]);
 
   const [map, setMap] = useState(null);
@@ -248,8 +295,10 @@ const NITGoaCampusMap = () => {
     { id: 'hostel', name: 'Hostels', color: 'bg-purple-600' },
     { id: 'facility', name: 'Facilities', color: 'bg-green-600' },
     { id: 'sports', name: 'Sports', color: 'bg-orange-600' },
-    { id: 'entrance', name: 'Entrance', color: 'bg-red-600' }
-  ];
+    { id: 'entrance', name: 'Entrance', color: 'bg-red-600' },
+    { id: 'workspace', name: 'Workspace', color: 'bg-yellow-600' },
+    { id: 'parking', name: 'Parking', color: 'bg-gray-700' },
+];
 
   const filteredLocations = locations.filter(loc => {
     const matchesSearch = loc.name.toLowerCase().includes(searchTerm.toLowerCase());
@@ -263,7 +312,9 @@ const NITGoaCampusMap = () => {
       hostel: '#A855F7',
       facility: '#10B981',
       sports: '#F97316',
-      entrance: '#EF4444'
+      entrance: '#EF4444',
+      workspace: '#FACC15',
+      parking: '#6B7280',
     };
     return colors[category] || '#6B7280';
   };

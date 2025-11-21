@@ -86,7 +86,7 @@ const NITGoaCampusMap = () => {
     {
       id: 4,
       name: "Abdul Kalam Block",
-      category: "Deparment",
+      category: "academic",
       icon: "🏠",
       lat:15.169746,
       lng: 74.012963,
@@ -98,7 +98,7 @@ const NITGoaCampusMap = () => {
     {
       id: 4,
       name: "c v raman complex",
-      category: "Department",
+      category:  "academic",
       icon: "🏠",
       lat:15.169797,
       lng: 74.013555,
@@ -110,7 +110,7 @@ const NITGoaCampusMap = () => {
     {
       id: 4,
       name: "visvesvaraya complex",
-      category: "Department",
+      category:  "academic",
       icon: "🏠",
       lat:15.169768,
       lng:74.014136,
@@ -147,7 +147,7 @@ const NITGoaCampusMap = () => {
     {
       id: 4,
       name: "sarabhai complex",
-      category: "Department",
+      category: "academic",
       icon: "🏠",
       lat: 15.168767,
       lng: 74.012959,
@@ -183,7 +183,7 @@ const NITGoaCampusMap = () => {
     {
       id: 4,
       name: "Ramanujan complex",
-      category: "Department ",
+      category:  "academic",
       icon: "💻",
       lat: 15.168767,
       lng:74.013543,
@@ -195,7 +195,7 @@ const NITGoaCampusMap = () => {
     {
       id: 9,
       name: "Sport Ground",
-      category: "academic",
+      category: "Sports",
       icon: "🏏🥅🏐",
       lat: 15.171153,
       lng: 74.014353,
@@ -274,7 +274,6 @@ const NITGoaCampusMap = () => {
     { id: 'sports', name: 'Sports', color: 'bg-orange-600' },
     { id: 'entrance', name: 'Entrance', color: 'bg-red-600' },
     { id: 'workspace', name: 'Workspace', color: 'bg-yellow-600' },
-    { id: 'parking', name: 'Parking', color: 'bg-gray-700' },
 ];
 
   const filteredLocations = locations.filter(loc => {
@@ -291,7 +290,6 @@ const NITGoaCampusMap = () => {
       sports: '#F97316',
       entrance: '#EF4444',
       workspace: '#FACC15',
-      parking: '#6B7280',
     };
     return colors[category] || '#6B7280';
   };

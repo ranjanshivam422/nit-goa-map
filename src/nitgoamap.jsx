@@ -8,11 +8,11 @@ const NITGoaCampusMap = () => {
   // ===========================================================
   
   // NIT Goa approximate coordinates
-  const CAMPUS_CENTER = { lat: 15.3647, lng: 73.9687 };
+  const CAMPUS_CENTER = { lat: 15.167930, lng:74.010737};
   
   const [locations, setLocations] = useState([
     {
-      id: 1,
+      id: 4,
       name: "Gyan Mandir",
       category: "academic",
       icon: "🏛️",
@@ -48,7 +48,7 @@ const NITGoaCampusMap = () => {
       image: "photos/medical.jpeg"
     },
     {
-      id: 2,
+      id: 4,
       name: "Central Library",
       category: "facility",
       icon: "📚",
@@ -72,7 +72,7 @@ const NITGoaCampusMap = () => {
       image: "photos/Boys_Hostel.jpeg"
     },
     {
-      id: 4,
+      id: 3,
       name: "Girls Hostel",
       category: "hostel",
       icon: "🏠",
@@ -132,7 +132,7 @@ const NITGoaCampusMap = () => {
       image: "photos/admin_block.jpeg"
     },
     {
-      id: 4,
+      id: 6,
       name: "Nescafe",
       category: "facility",
       icon: "☕",
@@ -145,7 +145,7 @@ const NITGoaCampusMap = () => {
     },
      
     {
-      id: 5,
+      id: 4,
       name: "sarabhai complex",
       category: "Department",
       icon: "🏠",
@@ -181,7 +181,7 @@ const NITGoaCampusMap = () => {
       image: "photos/WhatsApp Image 2025-11-06 at 11.21.09 PM.jpeg"
     },
     {
-      id: 8,
+      id: 4,
       name: "Ramanujan complex",
       category: "Department ",
       icon: "💻",
@@ -202,10 +202,10 @@ const NITGoaCampusMap = () => {
       description: "Facilities for cricket, football, volleyball, and other sports activities",
       timings: "8:00 AM - 10:00 PM",
       contact: "+91-832-2404270",
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop"
+      image: ""
     },
     {
-      id: 10,
+      id: 4,
       name: "G D Naidu workshop",
       category: "workspace",
       icon: "🏭",
@@ -214,10 +214,10 @@ const NITGoaCampusMap = () => {
       description: "Engineering workshop with machinery and labs for practical training",
       timings: "8:00 AM - 6:00 PM",
       contact: "+91-832-2404280",
-      image: "photos/Whatsapp Image 2025-11-04 at 2.08.09 PM(2).jpeg"
+      image: "photos/WhatsApp Image 2025-11-04 at 2.08.09 PM (2).jpeg"
     },
     {
-      id: 11,
+      id: 4,
       name: "SS BHATNAGA ENGINEERING Workshop",
       category: "workspace",
       icon: "🏗️",
@@ -227,31 +227,8 @@ const NITGoaCampusMap = () => {
       timings: "8:00 AM - 6:00 PM",
       contact: "+91-832-2404330",
       image: "photos/WhatsApp Image 2025-11-04 at 2.08.08 PM.jpeg"
-    },
-    {
-       id: 12,
-       name: "Parking Area",
-       category: "parking",
-       icon: "🅿️",
-       lat: 15.167679109120652, 
-       lng: 74.01061175926222,
-       description: "Designated parking space for students and staff vehicles",
-       timings: "24/7",
-       contact: "+91-832-2404290",
-        image: "photos/parking.jpeg"
-    },
-    {
-       id: 13,
-       name: "Parking Area 2",
-       category: "parking",
-       icon: "🅿️",
-       lat: 15.16827, 
-       lng: 74.01078,
-       description: "Designated parking space for students and staff vehicles",
-       timings: "24/7",
-       contact: "+91-832-2404290",
-        image: "photos/parking.jpeg"
     }
+    
   ]);
 
   const [map, setMap] = useState(null);
